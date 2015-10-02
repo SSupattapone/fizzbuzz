@@ -1,9 +1,9 @@
 """
 fizzbuzz.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Sam Supattapone
+Credit: none
 
-Assignment:
+Assignment: FizzBuzz
 
 Write a program that prints the numbers from 1 to 100. But for 
 multiples of three print “Fizz” instead of the number and for 
