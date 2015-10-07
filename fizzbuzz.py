@@ -49,7 +49,13 @@ number = input("How many numbers shall we print? ")
 fizz = input("For multiples of what number shall we print 'Fizz'? ")
 buzz = input("For multiples of what number shall we print 'Buzz'? ")
 
-for f in range(int(fizz), int(number)+1, int(fizz)):
-    print(f)
-#for x in range(1, int(number)+1):
-   # print (x)
+f = range(int(fizz), int(number)+1, int(fizz))
+b = range(int(buzz), int(number)+1, int(buzz))
+
+for n in range(1,int(number)):
+    if n in f:
+        print("fizz")
+    elif n in b:
+        print("buzz")
+    else:
+        print(n)
