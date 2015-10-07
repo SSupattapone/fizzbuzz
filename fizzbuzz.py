@@ -52,10 +52,12 @@ buzz = input("For multiples of what number shall we print 'Buzz'? ")
 f = range(int(fizz), int(number)+1, int(fizz))
 b = range(int(buzz), int(number)+1, int(buzz))
 
-for n in range(1,int(number)):
-    if n in f:
-        print("fizz")
-    elif n in b:
-        print("buzz")
+for n in range(1,int(number)+1):
+    if n in list(f) and n in list(b):
+        print("FizzBuzz")
+    elif n in list(f):
+        print("Fizz")
+    elif n in list(b):
+        print("Buzz")
     else:
         print(n)
